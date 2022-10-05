@@ -11,7 +11,7 @@ const ExerciseVideos = ({ exerciseVideosData, name }) => {
                 Watch <span style={{ color: "#FF2625", textTransform: "capitalize" }} >{name}</span> exercise videos
             </Typography>
             <Stack justifyContent="flex-start" flexWrap="wrap" alignItems="center" sx={{ flexDirection: { lg: "row" }, gap: { lg: "100px", xs: "0px" } }}>
-                {exerciseVideosData?.slice(0, 6).map((item, i) => (<a key={i} className="exercise-video" href={`https://www.youtube.com/watch?v=${item.video.videoId}`} target="_blank" rel="noreferer">
+                {exerciseVideosData?.slice(0, 6).map((item, i) => (<a key={i} className="exercise-video" href={`https://www.youtube.com/watch?v=${item.video.videoId}`} target="_blank" rel="noreferrer">
                     <img src={item.video.thumbnails[0].url} alt={item.video.title} />
                     <Box>
                         <Typography variant="h5" color="#000">
